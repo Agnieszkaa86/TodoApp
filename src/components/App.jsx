@@ -1,16 +1,15 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import { StatusFilter } from "./StatusFilter/StatusFilter";
+import { TaskList } from "./TaskList/TaskList";
+import { TaskForm } from "./TaskForm/TaskForm";
+ function App() {
+   return ( 
+     <>
+       <h1>Redux App</h1>
+       <TaskForm />
+       <StatusFilter />
+       <TaskList />
+     </>
+   );
+ }
+ 
+ export default App;
